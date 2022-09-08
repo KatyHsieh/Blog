@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+<div id="container">
+  <p id="edit"><b> Click "Edit" button to edit content. </b></p>
+  <button type="submit" id="edit-button">Edit</button>
+  <button type="submit" id="end-editing">Done</button>
+</div>
+
+<div class="" name="delete">
+
+    <form class="" action="/delete" method="post">
+      <h1><%=title%></h1>
+      <p><%=content%></p>
+      <input class="btn"type="submit" name="deleted" value="Delete"></input>
+      <input class="btn" type="hidden" name="postDeleted">
+
+    </form>
+
+</div>
+
+
+
+
+<%- include("partials/footer"); -%>
